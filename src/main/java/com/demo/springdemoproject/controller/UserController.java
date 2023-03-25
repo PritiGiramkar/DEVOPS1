@@ -56,7 +56,7 @@ public class UserController {
 		return "This application returns user details";
 	}
 	
-	@GetMapping(value="/add/{n1}/{n2}")
+	@GetMapping(value="/add/{n1}/{n2}")	//this will return addition of number
 	public Integer addition(@PathVariable String n1,@PathVariable String n2)
 	{
 		return Integer.parseInt(n1)+Integer.parseInt(n2);
