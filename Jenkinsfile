@@ -1,8 +1,8 @@
 pipeline {
 agent any
 tools {
-maven 'Maven 3.8'
-jdk 'jdk 11'
+Maven 'Maven 3.8'
+JDK 11 'jdk 11'
 }
 stages {
 stage('Initialize') {
