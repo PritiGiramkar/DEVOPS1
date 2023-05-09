@@ -2,6 +2,7 @@ package com.demo.springdemoproject.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
@@ -12,7 +13,7 @@ public class Users {
 	private Integer salary;
 	
 	@Id	// this is primary key
-	@GeneratedValue		//it will y default add the id to the value
+	@GeneratedValue(strategy = GenerationType.AUTO)		//it will y default add the id to the value
 	public long getId() {
 		return id;
 	}
