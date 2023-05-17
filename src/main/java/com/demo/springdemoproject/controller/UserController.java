@@ -53,7 +53,7 @@ public class UserController {
 	@GetMapping(value= "message")
 	public String getApplicationMessage()
 	{
-		return "This application returns user details";
+		return "This application returns user details!!";
 	}
 	
 	@GetMapping(value="/add/{n1}/{n2}")	//this will return addition of number

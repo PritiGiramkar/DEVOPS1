@@ -43,7 +43,7 @@ class UserControllerTest {
 		// extension of httpentity that adds httpstatuscode
 		ResponseEntity<String> response = restTemplate.exchange(createURLWithPort("/users/message"), HttpMethod.GET, entity, String.class);
 		
-		String expected = "This application returns user details";
+		String expected = "This application returns user details!!";
 		
 		Assertions.assertEquals(expected, response.getBody());
 	}
